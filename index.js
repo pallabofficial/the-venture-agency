@@ -8,3 +8,9 @@ page1.addEventListener("mousemove", function(event){
         left:event.x,
     })
 })
+page1.addEventListener("touchmove", function(event){
+    gsap.to(cursor, {
+        top:event.y,
+        left:event.x,
+    })
+})
