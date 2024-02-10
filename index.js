@@ -79,10 +79,11 @@ function cursorEffect() {
 cursorEffect();
 
 function page2Animation() {
-  gsap.from(".elems", {
+  gsap.from(".elems ", {
     y: 120,
     stagger: 0.5,
-    duration: 5,
+    duration: 10,
+    ease: "power1.inOut",
 
     scrollTrigger: {
       trigger: "#page-2",

@@ -2,6 +2,10 @@
     font-family: roboto;
     src: url(fonts/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: audiowide;
+    src: url(fonts/Audiowide-Regular.ttf);
+}
 
 *{
     margin:0;
@@ -77,10 +81,16 @@
     z-index: 2;
     color:white;
     padding-bottom: 1vh;
-    font-size: 8vw;
+    font-size: 10vw;
+    font-family: audiowide;
+    font-weight: 100px;
     /* line-height: 15vw;; */
-    letter-spacing: 3vw;;
+    /* letter-spacing: 3vw;; */
 
+}
+#banner h1{
+    font-family: audiowide;
+    font-weight: 100px;
 }
 
 @media(max-width:480px){
@@ -117,13 +127,20 @@
 #page-2-title-div{
     overflow: hidden;
     width:90%;
-    height:10%;
+    height:20%;
     border-bottom: 1px solid #9A9A9A;
     display:flex;
     /* align-items: center; */
     justify-content: space-between;
     font-size: 1.8vw;
+    padding-bottom: 3vh;
+
     
+}
+#page-2-title-item-1{
+    display:flex;
+    align-items: center;
+
 }
 #page-2-title-item-2{
    
