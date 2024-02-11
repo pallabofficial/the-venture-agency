@@ -63,6 +63,12 @@ function cursorEffect() {
       left: event.x,
     });
   });
+  page1.addEventListener("touchmove", function (event) {
+    gsap.to(cursor, {
+      top: event.y,
+      left: event.x,
+    });
+  });
   page1.addEventListener("mouseenter", function (event) {
     gsap.to(cursor, {
       scale: 1,
