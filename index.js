@@ -95,8 +95,8 @@ function page2Animation() {
       trigger: "#page-2",
       scroller: "#main",
 
-      start: "top 47%",
-      end: "top 46%",
+      start: "top 75%",
+      end: "top 74%",
       // markers:true,
       scrub: 2,
     },
