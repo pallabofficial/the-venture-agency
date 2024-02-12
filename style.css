@@ -11,8 +11,11 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: roboto;;
+}
+#main{
+    background-color: #FAF8F3;
 }
 
 #page-1{
@@ -127,10 +130,10 @@
     justify-content: center;
     gap:5vh;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #page-2-title-div{
-    overflow: hidden;
+    /* overflow: hidden; */
     width:90%;
     height:15%;
     border-bottom: 1px solid #9A9A9A;
@@ -154,7 +157,7 @@
 
 }
 #page-2-content-div{
-    overflow: hidden;
+    /* overflow: hidden; */
     padding:1vw;
     width:90%;
     height:60%;
@@ -183,6 +186,83 @@
 
 #page-3{
     width: 100vw;
-    height:100vh;
+    min-height:100vh;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    gap:33vh;    
+    align-items: center;
+}
+#page-3-top{
+    text-align: center;
+    width:90%;
+    margin-top: 30vh;
+    
+}
+#models{
+    padding:0.5vh 1vw;
+    color: white;
     background-color: black;
+    font-size: 0.9vw;
+    border-radius: 50px;;
+}
+#page-3-top h4{
+    margin-bottom: 1vh;;
+    font-weight: 400;
+
+}
+#page-3-top h1{
+    font-size: 4.5vw;
+    font-weight: 400;
+}
+#page-3-bottom{
+    width:95%;
+    height:120vh;
+    display:flex;
+    flex-direction: column;
+
+    align-content: center;
+}
+#services-title{
+    display:flex;
+    height:10%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;;
+
+}
+#page-3-video-div{
+    height:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black;; */
+    
+}
+.page-3-box{
+    height:100%;
+    width:32.5%;
+    object-fit: cover;
+    /* border: 1px solid black;; */
+    overflow:hidden;
+    position: relative;
+}
+.page-3-video{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.page-3-img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all ease 0.5s;
+}
+.page-3-img:hover{
+
+    opacity: 0;
 }
